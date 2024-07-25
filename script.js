@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
       index++;
       setTimeout(typeWriter, 50); // 4 characters per second (1000ms / 4)
     } else {
-      continueBtn.style.display = "block";
+      continueBtn.classList.add("yum");
     }
   }
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     intro.classList.add('fade-out');
     setTimeout(() => {
       intro.style.display = 'none';
-      mainContent.style.display = 'block';
-    }, 2000); // Match this with the fadeOut animation duration
+      mainContent.classList.add("yum");
+    }, 500); // Match this with the fadeOut animation duration
   });
 });

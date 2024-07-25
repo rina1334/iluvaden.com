@@ -28,7 +28,7 @@ li, h3 {
   overflow: hidden; /* Ensures intro screen hides overflow */
 }
 
-#main {
+.main {
   width: 100%;
   height: 100%;
   display: flex;
@@ -37,6 +37,8 @@ li, h3 {
   color: black;
   font-family: Arial, sans-serif;
   text-align: center;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
 }
 
 #navBar {
@@ -139,15 +141,21 @@ li, h3 {
   width: 555px;
 }
 
-#continueBtn {
+.continueBtn {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 16px;
+  transition: all 0.35s ease-in-out;
   cursor: pointer;
+  opacity: 0;
+}
+
+.yum {
+  opacity: 1;
 }
 
 .fade-out {
-  animation: fadeOut 2s forwards;
+  animation: fadeOut 0.5s forwards;
 }
 
 @keyframes fadeOut {
